@@ -1,19 +1,28 @@
 
+let vieille_dame = {
+    age: 99,
+    nom: {
+        prenom: 'Laponie',
+        nomDeFamille: 'Cath'
+    },
+    moral: 'mal',
+    objet: 'canne',
+    parler(){
+        if (this.moral === 'mal') {
+            alert('Vous me dérangez et "le frappe avec une ' + this.objet + ' !"');
+        } else {
+            alert('Bonjour, je suis ' + this.nom.prenom + ' ' + this.nom.nomDeFamille + '.');
+        }
+    }
+}
 
-// let sergio = {
-//     prenom : 'Sergio',
-//     panier : ['patate', 'carotte'],
-//     levol(){
-//         panier.splice(1, 2);
-//     }
-// }
+let vieil_homme = {
+    nom: 'Jet',
+    adoucir () {
+        vieille_dame.moral = 'bien';
+    }
+}
 
-// let francois = {
-//     prenom : 'François',
-//     panier : ['mais', 'salade'],
-//     derober(){
-//         this.panier.push('patate', 'carotte');
-//     }
-// }
-// sergio.levol()
-// console.log(sergio.panier);
+vieille_dame.parler();
+vieille_dame.adoucir(vieille_dame);
+vieille_dame.parler();
