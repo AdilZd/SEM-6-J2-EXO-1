@@ -24,5 +24,5 @@ let vieil_homme = {
 }
 
 vieille_dame.parler();
-vieille_dame.adoucir(vieille_dame);
+vieil_homme.adoucir(vieille_dame);
 vieille_dame.parler();
