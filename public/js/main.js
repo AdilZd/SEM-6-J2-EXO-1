@@ -11,7 +11,7 @@ let vieille_dame = {
         if (this.moral === 'mal') {
             alert('Vous me dérangez et "le frappe avec une ' + this.objet + ' !"');
         } else {
-            alert('Bonjour, je suis ' + this.nom.prenom + ' ' + this.nom.nomDeFamille + '.');
+            alert('Bonjour, ' + vieil_homme.prenom + '.');
         }
     }
 }
